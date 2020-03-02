@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -25,5 +25,11 @@ class HomeController extends Controller
     {
         logger('I was here');
         return view('home');
+    }
+
+    public function post()
+    {
+        $data = request()->all();
+        logger($data);
     }
 }

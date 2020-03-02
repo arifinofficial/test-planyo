@@ -19,6 +19,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'webhook-receiving-url',
+        'webhook-receiving-url', '/test/planyo'
     ];
 }
