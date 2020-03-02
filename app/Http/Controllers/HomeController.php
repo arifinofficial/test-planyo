@@ -29,6 +29,7 @@ class HomeController extends Controller
 
     public function post()
     {
+        logger('TEST POST');
         $data = request()->all();
         logger($data);
     }
