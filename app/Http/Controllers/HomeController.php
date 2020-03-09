@@ -38,11 +38,13 @@ class HomeController extends Controller
     {
         logger('New Reservation');
         $data = $request->all();
+        logger($data);
     }
 
     public function reservationConfirm(Request $request)
     {
         logger('Reservation Confirm');
         $data = $request->all();
+        logger($data);
     }
 }
