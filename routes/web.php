@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/test/planyo', 'HomeController@post')->name('test.planyo');
+Route::post('/planyo/reservation', 'HomeController@reservation')->name('planyo.newReservation');
+Route::post('/planyo/reservation-confirm', 'HomeController@reservationConfirm')->name('planyo.newReservationConfirm');
 
 Route::webhooks('webhook-receiving-url');

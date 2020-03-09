@@ -27,10 +27,22 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function post()
+    // public function post()
+    // {
+    //     logger('TEST POST');
+    //     $data = request()->all();
+    //     logger($data);
+    // }
+
+    public function reservation(Request $request)
     {
-        logger('TEST POST');
-        $data = request()->all();
-        logger($data);
+        logger('New Reservation');
+        $data = $request->all();
+    }
+
+    public function reservationConfirm(Request $request)
+    {
+        logger('Reservation Confirm');
+        $data = $request->all();
     }
 }
